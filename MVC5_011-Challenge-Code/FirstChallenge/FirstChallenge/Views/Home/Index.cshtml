@@ -1,0 +1,12 @@
+﻿@model List<FirstChallenge.Models.ComicBook>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@{
+    foreach (var book in Model)
+    {
+        <p>@book.ComicTitle - @book.EpisodeTitle</p>
+    }
+}
